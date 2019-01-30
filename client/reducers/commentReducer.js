@@ -18,7 +18,7 @@ const comment = (state = [], action) => {
   }
 };
 
-const comments = (state = {}, action) => {
+const commentReducer = (state = {}, action) => {
   if (typeof action.postId !== "undefined") {
     return {
       ...state,
@@ -28,4 +28,4 @@ const comments = (state = {}, action) => {
   return state;
 };
 
-export default comments;
+export default commentReducer;

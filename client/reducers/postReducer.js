@@ -1,4 +1,4 @@
-const posts = (state = [], action) => {
+const postReducer = (state = [], action) => {
   switch (action.type) {
     case "INCREMENT_LIKES":
       return [
@@ -11,4 +11,4 @@ const posts = (state = [], action) => {
   }
 };
 
-export default posts;
+export default postReducer;
